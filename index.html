@@ -8,24 +8,33 @@
     <style>
             p {
                 font-size: 20px;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
             h1 {
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                color: brown;
+                color: #028fd1;
                 font-size: 40px;
             }
+            h2 {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #02b2d1;
+                font-size: 30px;
+            }
+            h2 {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #02b2d1;
+                font-size: 25px;
+            }
             table, th, td {
-                border: 1px solid brown;
+                border: 1px solid aqua;
                 border-collapse: collapse;
                 text-align: center;
             }
             button {
-                color: brown;
-                background-color: antiquewhite;
+                color: blue;
+                background-color: aquamarine;
             }
             body {
-                background-color: bisque;
+                background-color: aliceblue;
             }
         </style> 
 </head>
@@ -33,19 +42,23 @@
     <header>
         <h1>Mi festival LPA</h1>
         <nav>
-            <a href="/">Inicio</a>
-            <a href="/">Acerca de</a>
-            <a href="/">Contacto</a>
+            <a href="#programa">Programación</a>
+            <a href="#inscripcion">Inscripciones</a>
+            <a href="#artistas">Artistas invitados</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <hr>
 
     <main>
-        <h2></h2>
-        <article>
+        <section id="descripcion">
+            <h2>El festival</h2>
+            <p>Nombre, lema, lugar, fechas, descripción y objetivos</p>
+        </section>
+        <article id="artistas">
             <header>
-                <h3></h3>
+                <h2>Nuestros artistas invitados</h2>
             </header>
             <figure>
                 <img src="imagen.jpg" alt="Descripción de la imagen">
@@ -53,21 +66,19 @@
             </figure>
             <p></p>
         </article>
-        <section>
-            <h3></h3>
-        </section>
     </main>
 
-    <aside>
-        <h2></h2>
+    <aside id="contacto">
+        <h2>Contacto</h2>
+        <p></p>
     </aside>
 
     <hr>
 
     <footer>
-        <p>© 2026 Festival LPA. Todos los derechos reservados.</p>
-        <a href="/">Nuestras redes sociales</a>
-        <a href="/">Volver arriba</a>
+        <p style="font-size: 14px;">© 2026 Festival LPA. Todos los derechos reservados.</p>
+        <a href="#contacto">Nuestras redes sociales</a>
+        <a href="#header">Volver arriba</a>
     </footer>
 </body>
 </html>
