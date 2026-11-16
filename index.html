@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival LPA</title>
+    <title>En-clave LPA live</title>
     <!--Enlace al repositorio: https://github.com/aortegamartin/LPA-festival -->
     <style>
             p {
@@ -11,21 +11,21 @@
             }
             h1 {
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                color: #028fd1;
+                color: #3570dd;
                 font-size: 40px;
             }
             h2 {
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                color: #02b2d1;
+                color: #2da9da;
                 font-size: 30px;
             }
-            h2 {
+            h3 {
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 color: #02b2d1;
                 font-size: 25px;
             }
             table, th, td {
-                border: 1px solid aqua;
+                border: 1px solid rgb(42, 134, 240);
                 border-collapse: collapse;
                 text-align: center;
             }
@@ -34,17 +34,18 @@
                 background-color: aquamarine;
             }
             body {
-                background-color: aliceblue;
+                background-color: rgb(255, 254, 247);
             }
         </style> 
 </head>
 <body>
     <header>
-        <h1>Mi festival LPA</h1>
+        <h1>En-clave LPA live</h1>
         <nav>
+            <a href="#descripcion">Sobre el festival</a>
+            <a href="#artistas">Artistas invitados</a>
             <a href="#programa">Programación</a>
             <a href="#inscripcion">Inscripciones</a>
-            <a href="#artistas">Artistas invitados</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
@@ -53,19 +54,87 @@
 
     <main>
         <section id="descripcion">
-            <h2>El festival</h2>
-            <p>Nombre, lema, lugar, fechas, descripción y objetivos</p>
+            <h2>Canarias vive la música</h2>
+            <p>Este es el festival anual de música canaria en vivo, con actividades y actuaciones. Desde artistas clásicos hasta los urbanos, es el espacio para que todos los públicos disfruten de la música.</p>
+            <p>En-clave LPA tiene como propósito promover la música y los ritmos tradicionales de las islas para su difusión entre los más jóvenes y que se mantenga el conocimiento del folclore mediante la música.</p>
+            <p>Este año 2026 tendrá lugar los días <em>27, 28 y 29 de noviembre</em> en el <strong><a href="https://maps.app.goo.gl/bMmbmM3CjUARrojA6" target="_blank" title="¿Dónde está el lugar del festival?">estadio Gran Canaria Arena</a></strong>.</p>
+            <hr>
         </section>
+
         <article id="artistas">
             <header>
                 <h2>Nuestros artistas invitados</h2>
+                <p>Este año contamos con varios artistas reconocidos en todas las islas de nuesro archipiélago:</p>
             </header>
             <figure>
-                <img src="imagen.jpg" alt="Descripción de la imagen">
-                <figcaption>Descripción de la figura</figcaption>
+                <h3>Quevedo</h3>
+                <img src="quevedo.jpg" alt="Imagen de Quevedo de su último álbum" style="width: 300px;">
+                <figcaption>Tendremos como gran invitado al joven artista Quevedo, conocido por sus canciones donde fusiona ritmos urbanos latinos con la cultura y el ambiente de las islas.</figcaption> <br>
             </figure>
-            <p></p>
+            <figure>
+                <h3>Los Gofiones</h3>
+                <img src="gofiones.jpg" alt="Imagen del grupo musical los Gofiones" style="width: 400px;">
+                <figcaption>Nos acompañará este año la emblemática agrupación de música popular folclórica originaria de Gran Canaria que cuenta con más de 50 años a sus espaldas.</figcaption> <br>
+            </figure>
+            <figure>
+                <h3>La Pantera</h3>
+                <img src="pantera.jpeg" alt="Imagen del artista canario Pantera" style="width: 300px;">
+                <figcaption>Contaremos también con una figura en auge: La Pantera, rapero, cantante y compositor de música urbana nacido en esta misma isla.</figcaption> <br>
+            </figure>
         </article>
+
+        <section id="programa">
+            <h2>Programación</h2>
+            <table>
+                <caption>Actividades</caption>
+
+                <tr>
+                    <th>Horario</th> 
+                    <th>Viernes 27</th> 
+                    <th>Sábado 28</th>  
+                    <th>Domingo 29</th> 
+                </tr>
+
+                <tr> 
+                    <td>12:00 - 14:00</td>  
+                    <td>Demostración bailes tradicionales</td>  
+                    <td>Taller baile urbano</td> 
+                    <td>Taller bailes tradicionales </td>
+                </tr>
+
+                <tr>
+                    <td>14:00 - 16:00</td>
+                    <td colspan="3">Descanso y food trucks</td>
+                </tr>
+
+                <tr> 
+                    <td>16:00 - 17:00</td>  
+                    <td>Taller instrumentos tradicionales</td>  
+                    <td>Demostración baile urbano</td> 
+                    <td rowspan="2">Concierto La Pantera </td>
+                </tr>
+
+                <tr> 
+                    <td>17:00 - 18:00</td>  
+                    <td rowspan="2">Concierto Los Gofiones</td>  
+                    <td>Taller instrumentos tradicionales </td>
+                </tr>
+
+                <tr> 
+                    <td>18:00 - 19:00</td>  
+                    <td rowspan="2">Concierto Quevedo</td>  
+                    <td>Taller instrumentos tradicionales</td> 
+                </tr>
+
+                <tr> 
+                    <td>19:00 - 20:00</td>  
+                    <td>Taller baile urbano</td>  
+                    <td>Demostración bailes tradicionales</td> 
+                </tr>
+
+            </table>
+        </section>
+        
     </main>
 
     <aside id="contacto">
