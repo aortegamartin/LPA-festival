@@ -23,15 +23,15 @@
                 text-align: center;
             }
             button {
-                color: blue;
-                background-color: aquamarine;
+                color: yellow;
+                background-color: blue;
             }
             
         </style> 
 </head>
 <body>
-    <header>
-        <h1>En-clave LPA live</h1>
+    <header id="top">
+        <h1 style="background-color: rgb(255, 255, 122);">En-clave LPA live</h1>
         <nav>
             <a href="#descripcion">Sobre el festival</a>
             <a href="#artistas">Artistas invitados</a>
@@ -80,51 +80,82 @@
 
                 <tr>
                     <th>Horario</th> 
-                    <th>Viernes 27</th> 
-                    <th>Sábado 28</th>  
-                    <th>Domingo 29</th> 
+                    <th colspan="2">Viernes 27</th> 
+                    <th colspan="2">Sábado 28</th>  
+                    <th colspan="2">Domingo 29</th> 
                 </tr>
 
                 <tr> 
-                    <td>12:00 - 14:00</td>  
-                    <td>Demostración bailes tradicionales</td>  
+                    <td>10:00 - 11:00</td>  
+                    <td>Demostración baile urbano</td>  
                     <td>Taller baile urbano</td> 
-                    <td>Taller bailes tradicionales </td>
+                    <td>Demostración bailes tradicionales</td>
+                    <td>Taller bailes tradicionales</td>
+                    <td rowspan="2">Demostración bailes tradicionales</td>
+                    <td>Taller instrumentos musicales</td>
+                </tr>
+
+                <tr> 
+                    <td>12:00 - 13:00</td>  
+                    <td rowspan="2">Demostración bailes tradicionales</td> 
+                    <td>Taller bailes tradicionales</td>
+                    <td rowspan="2">Demostración baile urbano</td>
+                    <td>Taller baile urbano</td>
+                    <td>Taller bailes tradicionales</td>
+                </tr>
+
+                <tr> 
+                    <td>13:00 - 14:00</td>  
+                    <td>Taller bailes tradicionales</td> 
+                    <td>Taller instrumentos musicales</td> 
+                    <td>Demostración baile urbano</td> 
+                    <td>Taller baile urbano</td>
                 </tr>
 
                 <tr>
                     <td>14:00 - 16:00</td>
-                    <td colspan="3">Descanso y food trucks</td>
+                    <td colspan="6">Descanso y food trucks</td>
                 </tr>
 
                 <tr> 
                     <td>16:00 - 17:00</td>  
                     <td>Taller instrumentos tradicionales</td>  
-                    <td>Demostración baile urbano</td> 
-                    <td rowspan="2">Concierto La Pantera </td>
+                    <td rowspan="2">Demostración bailes tradicionales</td> 
+                    <td>Taller bailes tradicionales</td>  
+                    <td>Demostración bailes tradicionales</td> 
+                    <td>Taller baile urbano</td>
+                    <td>Demostración baile urbano</td>
+                    
                 </tr>
 
                 <tr> 
                     <td>17:00 - 18:00</td>  
-                    <td rowspan="2">Concierto Los Gofiones</td>  
+                    <td>Taller bailes tradicionales</td>  
                     <td>Taller instrumentos tradicionales </td>
+                    <td rowspan="2">Demostración baile urbano</td>
+                    <td colspan="2">Concierto La Pantera</td> 
                 </tr>
 
                 <tr> 
                     <td>18:00 - 19:00</td>  
-                    <td rowspan="2">Concierto Quevedo</td>  
+                    <td colspan="2">Concierto Los Gofiones</td> 
+                    <td>Taller baile urbano</td>
                     <td>Taller instrumentos tradicionales</td> 
+                    <td rowspan="2">Demostración bailes tradicionales</td> 
                 </tr>
 
                 <tr> 
                     <td>19:00 - 20:00</td>  
                     <td>Taller baile urbano</td>  
-                    <td>Demostración bailes tradicionales</td> 
+                    <td>Demostración baile urbano</td>
+                    <td colspan="2">Concierto Quevedo</td> 
+                    <td>Taller bailes tradicionales</td> 
+                    
                 </tr>
 
                 <tr>
                     <td>20:00 - 22:00</td>
-                    <td colspan="3">Meet and greet con el invitado del día</td>
+                    <td colspan="6">Meet and greet con el invitado del día</td>
                 </tr>
 
             </table>
@@ -145,27 +176,15 @@
                 </tr>
                 <tr>
                     <td rowspan="2">Meet and Greet con invitados</td>
-                    <td>Demostración de bailes tradicionales</td>
+                    <td rowspan="2">Demostración de bailes tradicionales</td>
                     <td>Taller de bailes tradicionales</td>
                 </tr>
                 <tr>
-                    <td colspan="2">Taller de instrumentos tradicionales</td>
+                    <td>Taller de instrumentos tradicionales</td>
                 </tr>
             </table>
         </section>
 
-        <article id="inscripcion">
-            <h2>Inscríbete en tantas actividades como quieras</h2>
-            <p></p>
-            <details>
-                <summary>Sobre nuestra política de privacidad</summary>
-                <p>Con estos medios, trataremos su información personal para registrarle en una actividad o entablar un diálogo con usted, por ejemplo, responder preguntas sobre nuestros servicios. Solo tratamos la información que nos proporciona en relación con nuestra comunicación.</p>
-                <p>Si existiera la necesidad en un caso particular de almacenar su información personal por un período más prolongado, este podría ser el caso.</p>
-            </details>
-        </article>
-    </main>
-
-    <aside>
         <section id="servicios">
             <h2>Servicios de interés</h2>
             <ul>
@@ -176,6 +195,61 @@
             </ul>
         </section>
 
+        <article id="inscripcion">
+            <h2>Inscríbete aquí para participar</h2>
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <label for="usuario_nombre">Nombre y apellidos</label>
+                    <input type="text" id="usuario_nombre" name="usuario_nombre"><br>
+
+                    <label for="usuario-email">Correo electrónico</label>
+                    <input type="email" id="usuario-email" name="usuario_email" required><br>
+
+                    <label>Teléfono</label>
+                    <input type="tel"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Actividades</legend>
+
+                    <label for="actividad">Actividad preferida</label><br>
+                    <select id="actividad" name="actividad">
+                        <option value="baile_urbano">Taller de baile urbano</option>
+                        <option value="baile_tradicional">Taller de bailes tradicionales</option>
+                        <option value="instrumentos">Taller de intrumentos tradicionales</option>
+                    </select><br>
+
+                    <br><legend>Horario preferido</legend>
+                    <label for="horario_mañana">Mañana</label> 
+                    <input type="checkbox" id="horario_tarde" name="horario[]" value="mañana"/> <br>
+                    
+                    <label for="horario_tarde">Tarde</label> 
+                    <input type="checkbox" id="horario_tarde" name="horario[]" value="tarde"/> <br>
+
+                    <br><legend>Servicios deseados</legend>
+                    <label for="servicio_taquilla">Taquillas</label>
+                    <input type="radio" id="servicio_taquilla" name="servicio" value="taquilla"/><br>
+                    <label for="servicio_movilidad">Zona para personas con movilidad reducida</label>
+                    <input type="radio" id="servicio_movilidad" name="servicio" value="movilidad"/><br>
+                              
+                    <br><label for="comentario">Comentarios</label>
+                    <input type="textarea" id="comentario" name="comentario"><br>
+                </fieldset>
+
+                <button type="submit" id="btn-enviar" name="accion" value="enviar" title="Enviar los datos del formulario">Enviar</button>
+                <button type="reset" id="btn-limpiar" name="accion" value="limpiar" title="Limpiar todos los campos del formulario">Limpiar</button>
+            </form>
+            <details>
+                <summary style="font-style: italic;">Sobre nuestra política de privacidad</summary>
+                <p style="font-size: 14px;">Con estos medios, trataremos su información personal para registrarle en una actividad o entablar un diálogo con usted, por ejemplo, responder preguntas sobre nuestros servicios. Solo tratamos la información que nos proporciona en relación con nuestra comunicación.</p>
+                <p style="font-size: 14px;">Si existiera la necesidad en un caso particular de almacenar su información personal por un período más prolongado, este podría ser el caso.</p>
+            </details>
+            <hr>
+        </article>
+    </main>
+
+    <aside>
         <section id="recomendaciones">
             <h2>Nuestras recomendaciones para asistir al festival</h2>
             <ol>
@@ -205,7 +279,8 @@
 
     <footer>
         <p style="font-size: 14px;">© 2026 En-clave LPA. Todos los derechos reservados.</p>
-        <a href="#header">Volver arriba</a>
+        <a href="https://www.instagram.com/lpajuventud/" target="_blank" title="Nuestro Instagram">Nuestras redes sociales</a>
+        <a href="#top">Volver arriba</a>
     </footer>
 </body>
 </html>
