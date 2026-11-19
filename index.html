@@ -15,6 +15,7 @@
             h1, h2, h3, h4 {
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 color: #3570dd;
+                background-color: lightgoldenrodyellow;
             }
             
             table, th, td {
@@ -31,12 +32,15 @@
 </head>
 <body>
     <header id="top">
-        <h1 style="background-color: rgb(255, 255, 122);">En-clave LPA live</h1>
+        <h1 style="background-color: rgb(255, 255, 122);">En-clave LPA live </h1>
         <nav>
-            <a href="#descripcion">Sobre el festival</a>
-            <a href="#artistas">Artistas invitados</a>
-            <a href="#programa">Programación</a>
-            <a href="#inscripcion">Inscripciones</a>
+            <ul>
+               <li><a href="#descripcion">Sobre el festival</a></li> 
+                <li><a href="#artistas">Artistas invitados</a></li>
+                <li><a href="#programa">Programación</a></li>
+                <li><a href="#inscripcion">Inscripciones</a></li>
+            </ul>
+            
         </nav>
     </header>
 
@@ -45,8 +49,10 @@
     <main>
         <section id="descripcion">
             <h2>Canarias vive la música</h2>
-            <p>Este es el festival anual de música canaria en vivo, con actividades y actuaciones. Desde artistas clásicos hasta los urbanos, es el espacio para que todos los públicos disfruten de la música.</p>
-            <p>En-clave LPA tiene como propósito promover la música y los ritmos tradicionales de las islas para su difusión entre los más jóvenes y que se mantenga el conocimiento del folclore mediante la música.</p>
+            <p>Este es el festival anual de música canaria en vivo de la capital grancanaria, con actividades y actuaciones. Desde artistas clásicos hasta los urbanos, es el espacio para que todos los públicos disfruten de la música.</p>
+            <img src="canaria.png" alt="Canaria con ropas tradicionales de Gran Canaria" style="width: 30%;">
+        
+            <p>En-clave LPA tiene como propósito <mark>promover la música y los ritmos tradicionales de las islas</mark> para su difusión entre los más jóvenes y que se mantenga el conocimiento del folclore mediante la música.</p>
             <p>Este año 2026 tendrá lugar los días <em>27, 28 y 29 de noviembre</em> en el <strong><a href="https://maps.app.goo.gl/bMmbmM3CjUARrojA6" target="_blank" title="¿Dónde está el lugar del festival?">estadio Gran Canaria Arena</a></strong>.</p>
             <hr>
         </section>
@@ -58,20 +64,22 @@
             </header>
             <figure>
                 <h3>Quevedo</h3>
-                <img src="quevedo.jpg" alt="Imagen de Quevedo de su último álbum" style="width: 75%;">
+                <img src="quevedo.jpg" alt="Imagen de Quevedo de su último álbum" style="width: 30%;">
                 <figcaption>El sábado 28 tendremos como gran invitado al joven artista Quevedo, conocido por sus canciones donde fusiona ritmos urbanos latinos con la cultura y el ambiente de las islas.</figcaption> <br>
             </figure>
             <figure>
                 <h3>Los Gofiones</h3>
-                <img src="gofiones.jpg" alt="Imagen del grupo musical los Gofiones" style="width: 100%;">
+                <img src="gofiones.jpg" alt="Imagen del grupo musical los Gofiones" style="width: 50%;">
                 <figcaption>Nos acompañará el viernes 27 este año la emblemática agrupación de música popular folclórica originaria de Gran Canaria que cuenta con más de 50 años a sus espaldas.</figcaption> <br>
             </figure>
             <figure>
                 <h3>La Pantera</h3>
-                <img src="pantera.jpeg" alt="Imagen del artista canario Pantera" style="width: 70%;">
+                <img src="pantera.jpeg" alt="Imagen del artista canario Pantera" style="width: 30%;">
                 <figcaption>El domingo 29 contaremos también con una figura en auge: La Pantera, rapero, cantante y compositor de música urbana nacido en esta misma isla.</figcaption> <br>
             </figure>
         </article>
+
+        <hr>
 
         <section id="programa">
             <h2>Programación</h2>
@@ -185,6 +193,8 @@
             </table>
         </section>
 
+        <hr>
+
         <section id="servicios">
             <h2>Servicios de interés</h2>
             <ul>
@@ -201,11 +211,11 @@
                 <fieldset>
                     <legend>Datos personales</legend>
 
-                    <label for="usuario_nombre">Nombre y apellidos</label>
-                    <input type="text" id="usuario_nombre" name="usuario_nombre"><br>
+                    <label for="nombre">Nombre y apellidos</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
 
-                    <label for="usuario-email">Correo electrónico</label>
-                    <input type="email" id="usuario-email" name="usuario_email" required><br>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required><br>
 
                     <label>Teléfono</label>
                     <input type="tel"><br>
@@ -220,18 +230,19 @@
                         <option value="instrumentos">Taller de intrumentos tradicionales</option>
                     </select><br>
 
-                    <br><legend>Horario preferido</legend>
-                    <label for="horario_mañana">Mañana</label> 
-                    <input type="checkbox" id="horario_tarde" name="horario[]" value="mañana"/> <br>
-                    
-                    <label for="horario_tarde">Tarde</label> 
-                    <input type="checkbox" id="horario_tarde" name="horario[]" value="tarde"/> <br>
-
                     <br><legend>Servicios deseados</legend>
-                    <label for="servicio_taquilla">Taquillas</label>
-                    <input type="radio" id="servicio_taquilla" name="servicio" value="taquilla"/><br>
-                    <label for="servicio_movilidad">Zona para personas con movilidad reducida</label>
-                    <input type="radio" id="servicio_movilidad" name="servicio" value="movilidad"/><br>
+                    <label for="servicio_taquilla">Taquillas</label> 
+                    <input type="checkbox" id="servicio_taquilla" name="servicio[]" value="taquilla"/> <br>
+                    
+                    <label for="servicio_movilidad">Zona para personas con movilidad reducida</label> 
+                    <input type="checkbox" id="servicio_movilidad" name="servicio[]" value="movilidad"/> <br>
+
+
+                    <br><legend>Horario preferido</legend>
+                    <label for="horario_morning">Mañana</label>
+                    <input type="radio" id="horario_morning" name="horario" value="morning"/><br>
+                    <label for="horario_tarde">Tarde</label>
+                    <input type="radio" id="horario_tarde" name="horario" value="tarde"/><br>
                               
                     <br><label for="comentario">Comentarios</label>
                     <input type="textarea" id="comentario" name="comentario"><br>
@@ -243,7 +254,7 @@
             <details>
                 <summary style="font-style: italic;">Sobre nuestra política de privacidad</summary>
                 <p style="font-size: 14px;">Con estos medios, trataremos su información personal para registrarle en una actividad o entablar un diálogo con usted, por ejemplo, responder preguntas sobre nuestros servicios. Solo tratamos la información que nos proporciona en relación con nuestra comunicación.</p>
-                <p style="font-size: 14px;">Si existiera la necesidad en un caso particular de almacenar su información personal por un período más prolongado, este podría ser el caso.</p>
+                <p style="font-size: 14px;">Los datos personales proporcionados se conservarán durante el tiempo necesario para cumplir con la finalidad para la que se recaban y para determinar las posibles responsabilidades que se pudieran derivar de la finalidad.</p>
             </details>
             <hr>
         </article>
@@ -264,10 +275,13 @@
         <section id="normas">
             <h2>Normas de participación</h2>
             <ul>
-                <li>Está prohibido llevar armas u objetos punzantes.</li>
-                <li>No está permitido llevar recipientes de cristal, ni espráis.</li>
+                <li>Está prohibido llevar armas, objetos punzantes o utensilios que se estimen como peligrosos.</li>
+                <li>No está permitido llevar recipientes de cristal ni aerosoles.</li>
                 <li>Queda prohibido el uso de drones no autorizados.</li>
                 <li>Por su seguridad, no lleve ninguna sustancia peligrosa.</li>
+                <li>Entrada limitada al aforo de cada espacio.</li>
+                <li>La organización se reserva el derecho a hacer cambios en la programación y horarios del evento, debido a causas de fuerza mayor o última hora.</li>
+                <li>Están prohibidas las acciones que puedan crear situaciones de peligro o incomodidad al público en general y al personal de la organización.</li>
             </ul>
         </section>
 
@@ -278,8 +292,12 @@
     <hr>
 
     <footer>
+        <p style="font-size: 16px; font-weight: bold; color: blue;">Gracias a nuestros patrocinadores</p>
+        <img src="clipper.jpg" alt="Logo de Clipper" style="width: 20%;" title="Clipper">
+        <img src="cabildo.png" alt="Logo del Cabildo de Gran Canaria" style="width: 20%;" title="Cabildo de Gran Canaria">
+        <img src="Ayuntamiento-LPGC.png" alt="Logo del ayuntamiento de Las Palmas" style="width: 20%;" title="Ayuntamiento de Las Palmas">
         <p style="font-size: 14px;">© 2026 En-clave LPA. Todos los derechos reservados.</p>
-        <a href="https://www.instagram.com/lpajuventud/" target="_blank" title="Nuestro Instagram">Nuestras redes sociales</a>
+        <a href="https://www.instagram.com/lpajuventud/" target="_blank" title="LPA Juventud">Nuestro Instagram</a>
         <a href="#top">Volver arriba</a>
     </footer>
 </body>
